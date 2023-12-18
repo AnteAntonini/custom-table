@@ -1,0 +1,60 @@
+.websiteStatus {
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.statusIndicator {
+  display: flex;
+  height: 16px;
+  width: 16px;
+  margin: 0 4px;
+  position: relative;
+}
+
+.websiteStatusInfo {
+  color: var(--Shade-2);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.statusIndicator:hover .tooltipContainer {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltipContainer {
+  position: absolute;
+  height: 26px;
+  min-width: 84px;
+  background-color: var(--Shade-2);
+  border-radius: 2px;
+  visibility: hidden;
+  top: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltipContainer::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  background-color: var(--Shade-2);
+}
+
+.tooltipText {
+  text-align: center;
+  color: var(--Shade-8);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  padding: 6px 8px;
+  white-space: nowrap;
+}
