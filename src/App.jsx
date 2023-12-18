@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import styles from "./App.module.css";
 
 import { TableHead } from "./components/TableHead";
@@ -9,8 +9,6 @@ import { useFetch } from "./hooks/useFetch";
 const TableComponent = () => {
   const [pageSize, setPageSize] = useState(25);
   const [page, setPage] = useState(1);
-
-  const tableRef = useRef(null);
 
   const data = useFetch(
     `https://demo-api.dotmetrics.net/v1/public/organizations/list?pageSize=${pageSize}&page=${page}`
@@ -24,32 +22,35 @@ const TableComponent = () => {
   };
 
   return (
-    <div className={styles.tableContainer}>
-      <table className={styles.table}>
-        <TableHead
-          toggleSelectAllWebsitesCheckbox={toggleSelectAllWebsitesCheckbox}
-        />
-        <tbody ref={tableRef}>
-          {data?.result &&
-            data.result.map((organization, index) => (
-              <TableRow
-                key={organization.id}
-                organization={organization}
-                websitesLength={data.result.length}
-                isSelectAllWebsitesChecked={isSelectAllWebsitesChecked}
-              />
-            ))}
-        </tbody>
-        <tfoot>
-          <Pagination
-            totalCount={data?.totalCount}
-            page={page}
-            pageSize={pageSize}
-            setPage={setPage}
-            setPageSize={setPageSize}
+    <div className={styles.mainWrapper}>
+      <div className={styles.tableContainer}>
+        <table className={styles.table}>
+          <TableHead
+            toggleSelectAllWebsitesCheckbox={toggleSelectAllWebsitesCheckbox}
           />
-        </tfoot>
-      </table>
+          <tbody>
+            {data?.result &&
+              data.result.map((organization, index) => (
+                <TableRow
+                  key={organization.id}
+                  organization={organization}
+                  websitesLength={data.result.length}
+                  isSelectAllWebsitesChecked={isSelectAllWebsitesChecked}
+                />
+              ))}
+          </tbody>
+          <tfoot></tfoot>
+        </table>
+      </div>
+      <div className={styles.paginationWrapper}>
+        <Pagination
+          totalCount={data?.totalCount}
+          page={page}
+          pageSize={pageSize}
+          setPage={setPage}
+          setPageSize={setPageSize}
+        />
+      </div>
     </div>
   );
 };
