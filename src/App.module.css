@@ -1,9 +1,26 @@
+.mainWrapper {
+  margin: 60px 0;
+}
+
 .tableContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 155px;
-  margin: 60px 0;
+  max-height: 756px;
+  overflow: auto;
+}
+
+.tableContainer::-webkit-scrollbar {
+  width: 0px;
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.tableContainer::-webkit-scrollbar-track {
+  background-color: transparent;
 }
 
 .table {
@@ -13,13 +30,11 @@
 }
 
 tbody {
-  display: block;
   max-height: 736px;
-  overflow-y: auto;
-  position: relative;
+}
 
-  scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
+.paginationWrapper {
+  padding: 0 156px;
 }
 
 th:nth-child(2),
