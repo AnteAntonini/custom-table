@@ -1,0 +1,103 @@
+.tableRow {
+  height: 32px;
+  position: relative;
+  background: linear-gradient(
+      0deg,
+      rgba(206, 208, 218, 0.05) 0%,
+      rgba(206, 208, 218, 0.05) 100%
+    ),
+    linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, #fff 100%);
+}
+
+.tableRowDefault {
+  height: 32px;
+  background: linear-gradient(
+      0deg,
+      rgba(206, 208, 218, 0.05) 0%,
+      rgba(206, 208, 218, 0.05) 100%
+    ),
+    linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, #fff 100%);
+  box-shadow: 0px -1px 0px 0px #eaedf3 inset, -1px 0px 0px 0px #eaedf3 inset,
+    1px 0px 0px 0px #eaedf3 inset;
+}
+
+.tableDataContainer {
+  display: flex;
+  align-items: center;
+}
+
+.tableRowName {
+  color: var(--Shade-1);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.tableRowArrow {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.websiteTableRow {
+  background: var(--Shade-8);
+  box-shadow: -1px -1px 0px #eaedf3 inset, -1px 0px 0px 0px #eaedf3 inset,
+    1px 0px 0px 0px #eaedf3 inset;
+}
+
+.websiteTableRow:hover {
+  background-color: var(--Shade-7);
+}
+
+.tableRowExpanded {
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+
+.tableRowExpandedArrow {
+  margin-left: 0;
+}
+
+.tableRowInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3px;
+}
+
+.checkboxWrapper {
+  margin: 0 16px;
+}
+
+.websiteRowImage {
+  height: 16px;
+  width: 16px;
+  background: url("../../assets/website-image.png"),
+    lightgray 50% / contain no-repeat;
+  border-radius: 50%;
+  margin: 0 12px;
+}
+
+.websiteName {
+  color: var(--Shade-2);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.websiteSection {
+  padding-left: 16px;
+  color: var(--Shade-2);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}

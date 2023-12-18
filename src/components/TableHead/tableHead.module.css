@@ -1,0 +1,41 @@
+.tableHead {
+  background: rgba(244, 245, 246, 0.4);
+  box-shadow: 0px 0.997px 0px 0px #eaedf3 inset,
+    -0.997px 0px 0px 0px #eaedf3 inset, 0.997px 0px 0px 0px #eaedf3 inset,
+    0px -0.997px 0px 0px #eaedf3 inset;
+}
+
+.tableHeadRow {
+  height: 40px;
+  width: 100%;
+  text-align: start;
+}
+
+.tableHeadRow th {
+  text-align: start;
+  color: var(--Shade-2);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+}
+
+.tableHeadItem {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxWrapper {
+  margin: 0 16px;
+}
+
+.tableHeadSeparator {
+  display: inline-block;
+  width: 1px;
+  height: 40px;
+  background: var(--Shade-6);
+  margin-right: 16px;
+  vertical-align: middle;
+}

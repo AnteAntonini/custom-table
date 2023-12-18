@@ -1,0 +1,81 @@
+.websiteSectionTitle {
+  color: var(--Shade-4, #9ea0a5);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.44px;
+  text-transform: uppercase;
+  background: linear-gradient(0deg, #f7f8fa 0%, #f7f8fa 100%),
+    linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, #fff 100%);
+  box-shadow: 0px -1px 0px 0px #eaedf3 inset, -1px 0px 0px 0px #eaedf3 inset,
+    1px 0px 0px 0px #eaedf3 inset;
+  padding: 2px 0 2px 56px;
+}
+
+.innerTable {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(313px, 1fr));
+  width: 100%;
+  background: linear-gradient(
+      0deg,
+      rgba(234, 237, 243, 0.4) 0%,
+      rgba(234, 237, 243, 0.4) 100%
+    ),
+    #fff;
+  box-shadow: 0px -1px 0px 0px #eaedf3 inset, -1px 0px 0px 0px #eaedf3 inset,
+    1px 0px 0px 0px #eaedf3 inset;
+  flex-wrap: wrap;
+  padding: 26px 0;
+}
+
+.websiteSectionData {
+  flex: 1;
+  margin-left: 56px;
+  min-width: 257px;
+  max-width: 25%;
+}
+
+.websiteSectionDataRow {
+  height: 56px;
+  background: var(--Shade-8);
+  box-shadow: -1px -1px 0px 0px #eaedf3 inset, 1px 0px 0px 0px #eaedf3 inset,
+    0px 1px 0px 0px #eaedf3 inset;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.websiteSectionDataRow:hover {
+  background-color: var(--Shade-7);
+}
+
+.websiteSectionDataInfo {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxWrapper {
+  margin: 0 16px;
+}
+
+.websiteSectionName {
+  color: var(--Shade-3);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.websiteSectionDataAction {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.moreIcon {
+  display: flex;
+  margin: 0 16px;
+  cursor: pointer;
+}
