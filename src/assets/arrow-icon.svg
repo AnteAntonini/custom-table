@@ -1,0 +1,15 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  viewBox="0 0 16 16"
+  fill="none"
+  class="arrow-icon {{className}}"
+>
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M6.00168 4L11.0017 8.07429L6 12L6.00168 4Z"
+    fill="{{fillColor}}"
+  />
+</svg>
