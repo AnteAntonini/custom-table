@@ -1,0 +1,39 @@
+.pagination {
+  color: var(--Shade-3);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.rowsText {
+  text-align: right;
+}
+
+.paginationWrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.paginationPages {
+  margin-right: 15px;
+}
+
+.separator {
+  width: 1px;
+  height: 20px;
+  background: var(--Shade-6);
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.separator.small {
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.changePageArrow {
+  cursor: pointer;
+}
