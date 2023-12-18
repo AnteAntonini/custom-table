@@ -37,39 +37,37 @@ export function Pagination({
   };
 
   return (
-    <tr>
-      <td className={styles.pagination} colSpan="3">
-        <div className={styles.paginationWrapper}>
-          <span className={styles.rowsText}>Show rows:</span>
+    <div className={styles.pagination}>
+      <div className={styles.paginationContent}>
+        <span className={styles.rowsText}>Show rows:</span>
 
-          <PageSizeDropdown
-            isOpen={isOpen}
-            currentPageSize={pageSize}
-            handleSelectChange={handlePageSizeChange}
-            toggleDropdown={toggleDropdown}
-            closeDropdown={closeDropdown}
-          />
+        <PageSizeDropdown
+          isOpen={isOpen}
+          currentPageSize={pageSize}
+          handleSelectChange={handlePageSizeChange}
+          toggleDropdown={toggleDropdown}
+          closeDropdown={closeDropdown}
+        />
 
-          <span className={styles.separator} />
-          <span className={styles.paginationPages}>
-            {page} - {pageSize} of {totalCount}
-          </span>
+        <span className={styles.separator} />
+        <span className={styles.paginationPages}>
+          {page} - {pageSize} of {totalCount}
+        </span>
 
-          <img
-            className={styles.changePageArrow}
-            src="src/assets/arrow-left-solid.svg"
-            alt="arrow left"
-            onClick={() => handlePageChange(page - 1)}
-          />
-          <span className={`${styles.separator} ${styles.small}`} />
-          <img
-            className={styles.changePageArrow}
-            src="src/assets/arrow-right-solid.svg"
-            alt="arrow right"
-            onClick={() => handlePageChange(page + 1)}
-          />
-        </div>
-      </td>
-    </tr>
+        <img
+          className={styles.changePageArrow}
+          src="src/assets/arrow-left-solid.svg"
+          alt="arrow left"
+          onClick={() => handlePageChange(page - 1)}
+        />
+        <span className={`${styles.separator} ${styles.small}`} />
+        <img
+          className={styles.changePageArrow}
+          src="src/assets/arrow-right-solid.svg"
+          alt="arrow right"
+          onClick={() => handlePageChange(page + 1)}
+        />
+      </div>
+    </div>
   );
 }

@@ -34,7 +34,10 @@ tbody {
 }
 
 .paginationWrapper {
+  width: 100%;
   padding: 0 156px;
+  display: flex;
+  justify-content: center;
 }
 
 th:nth-child(2),

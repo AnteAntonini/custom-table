@@ -39,7 +39,6 @@ const TableComponent = () => {
                 />
               ))}
           </tbody>
-          <tfoot></tfoot>
         </table>
       </div>
       <div className={styles.paginationWrapper}>

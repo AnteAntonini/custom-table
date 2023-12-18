@@ -4,17 +4,21 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  display: flex;
+  width: 100%;
+  max-width: 1110px;
 }
 
 .rowsText {
   text-align: right;
 }
 
-.paginationWrapper {
+.paginationContent {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: flex-end;
   margin-top: 16px;
+  width: 100%;
 }
 
 .paginationPages {
